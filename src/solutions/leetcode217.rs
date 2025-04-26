@@ -10,7 +10,7 @@ pub fn solution(nums: &Vec<i32>) -> bool {
 
     for num in nums {
         match map.get(&num) {
-            Some(value) => {
+            Some(_) => {
                 return true;
             }
             None => {
