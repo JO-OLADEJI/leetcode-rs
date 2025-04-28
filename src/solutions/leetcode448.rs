@@ -10,5 +10,10 @@ pub fn solution(nums: &mut Vec<i32>) -> Vec<i32> {
         }
     }
 
-    return nums.into_iter().enumerate().filter(|(_, n)| **n > 0).map(|(i, _)| (i + 1) as i32).collect::<Vec<i32>>();
+    return nums
+        .into_iter()
+        .enumerate()
+        .filter(|(_, n)| **n > 0)
+        .map(|(i, _)| (i + 1) as i32)
+        .collect::<Vec<i32>>();
 }
